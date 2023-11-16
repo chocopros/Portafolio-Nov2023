@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
+import Header from './components/pages/header/header'
 
 const App = () => {
   return (
     <>
-      <h1>Header</h1>
+    
+      <Header />
 
       <Routes>
 

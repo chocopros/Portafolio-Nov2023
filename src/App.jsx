@@ -1,7 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/pages/header/header'
+import AboutMe from './components/routes/aboutMe/AboutMe'
 
 const App = () => {
+
+
   return (
     <>
     
@@ -9,7 +12,7 @@ const App = () => {
 
       <Routes>
 
-        <Route path='/' element={<h1>About me</h1>} />
+        <Route path='/' element={<AboutMe />} />
         <Route path='/works' element={<h1>Works</h1>} />
         <Route path='/post' element={<h1>Post</h1>} />
         <Route path='/contact' element={<h1>Contact</h1>} />

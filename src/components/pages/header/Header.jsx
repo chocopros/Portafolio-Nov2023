@@ -48,17 +48,23 @@ const Navbar = () => {
 export default Navbar
 
 const Logo = styled.div`
-  color: #000000;
+  color: #1d1d1d;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
+
+  h1 {
+    color: #ffffff;
+    background-color: #1d1d1d;
+  }
 
 `
 
 const NavContainer = styled.nav`
 
   padding: .4rem;
-  /* background-color: #ffffff; */
+  background-color: #1d1d1d;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -70,7 +76,7 @@ const NavContainer = styled.nav`
   box-shadow: 0px 22px 39px -31px rgba(0,0,0,0.75);
 
   a{
-    color: #000000;
+    color: #131313;
     text-decoration: none;
     margin-right: 1rem;
   }
@@ -83,6 +89,7 @@ const NavContainer = styled.nav`
     margin-right: auto;
     text-align: center;
     transition: all .5s ease;
+    background-color:  #1d1d1d;
     a{
       color: #ffffff;
       font-size: 2rem;
@@ -95,6 +102,7 @@ const NavContainer = styled.nav`
         font-size: 1rem;
         color: #ffffff;
         display: inline;
+        
       }
       display: block;
     }
@@ -113,7 +121,7 @@ const NavContainer = styled.nav`
     a{
       font-size: 3rem;
       margin-top: 1rem;
-      color: #000000;
+      color:  #131313;
     }
   
 
@@ -126,7 +134,7 @@ const NavContainer = styled.nav`
 `
 
 const BgDiv = styled.div`
-  background-color: #8d8d8d8e;
+  background-color: #1d1d1d;
   position: absolute;
   top: 1000px;
   left: -1000px;

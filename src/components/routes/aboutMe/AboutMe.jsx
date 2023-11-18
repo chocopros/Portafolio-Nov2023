@@ -22,16 +22,27 @@ const AboutMe = () => {
 
         <div className='boddy__info'>
             <div className='btn__follow'>
-                <button>Follow </button>
+                <button>Follow <i className="fa-brands fa-twitter"></i>  </button>
             </div>
             <h2>Jesus Arechider</h2>
             <h3>Brings ideas to life with code! ✨</h3>
             <p className='des__job'>Development Web. Creative content Creator.
             Electrical Engineering. IT Support. Marching Learning in process.
             </p>
-            <span>
+            <ul className='details__info'>
+              <li> <i className="fa-solid fa-briefcase fa-bounce" style={{color:'green'}}></i> Avalible</li>
+              <li> <i className="fa-solid fa-link"></i>/works</li>
+              <li> <i class="fa-solid fa-cake-candles"></i> Dicember 1st, 1993</li>
+              <li> <i class="fa-solid fa-calendar-days"></i> Joined Jan 2023</li>
+            </ul>
+        </div>
 
-            </span>
+        <div className='aboutme_info'>
+          <h2><i className="fa-solid fa-person"></i> About Me</h2>
+          <p>
+          Passionate about technology and computer advances, versatile in any technology, from electricity, electronics, graphic design, web programming, technical support, machine learning, learning something new every day. Thanks to my own confidence, I can add a lot of value by developing anywhere.
+           My goal is to continue learning with technology, learn a little more every day and look for a workplace where I can be a part.
+          </p>
         </div>
         
        
@@ -39,10 +50,7 @@ const AboutMe = () => {
       
       </SectionHero>
 
-   
-    
 
-      
 
     </MainContainer>
   )
@@ -129,18 +137,34 @@ const SectionHero = styled.section`
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 50px;
     }
 
     h3 {
-
+      font-size: 20px;
     }
 
     .des__job{
       max-width: 70%;
     }
 
+    .details__info{
+      display: flex;
+      gap: 50px;
+      list-style: none;
+    }
+  }
 
+  .aboutme_info {
+    margin-top: 20px;
+    padding: 20px 50px;
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      margin-top: 15px;
+      text-align: justify;
+    }
   }
 
 

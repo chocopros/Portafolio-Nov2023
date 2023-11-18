@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/pages/header/header'
 import AboutMe from './components/routes/aboutMe/AboutMe'
+import Footer from './components/pages/footer/Footer'
 
 const App = () => {
 
@@ -19,8 +20,7 @@ const App = () => {
 
       </Routes>
 
-
-      <h2>Footer</h2>
+      <Footer />
     </>
   )
 }

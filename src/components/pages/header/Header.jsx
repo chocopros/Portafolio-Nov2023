@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import BurguerButton from './BurguerButon'
+import { Link } from 'react-router-dom'
 
 
+function Navbar() {
 
-const Navbar = () => {
 
 
   const [clicked, setClicked] = useState(false)
@@ -22,16 +22,16 @@ const Navbar = () => {
         
         <Link to='/'>
           <Logo>
-            <h1>JesusArechider.Dev</h1>
+            <h1>JesusArechider.DEV</h1>
           </Logo>
         </Link>
         
 
         <div className={`links ${clicked ? 'active' : ''}`}>
-          <Link to='/'>// About me </Link>
-          <Link to='/works'>// Works</Link>
-          <Link to='/post'>// Post</Link>
-          <Link to='/contact'>// Contact</Link>
+          <Link to='/'>About Me </Link>
+          <Link to='/works'>Works</Link>
+          <Link to='/posts'>Posts</Link>
+          <Link to='/contact'>Contact</Link>
         </div>
 
         <div className='burguer'>
@@ -48,35 +48,38 @@ const Navbar = () => {
 export default Navbar
 
 const Logo = styled.div`
-  color: #1d1d1d;
+  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
- 
-
-  h1 {
-    color: #ffffff;
-    background-color: #1d1d1d;
-  }
 
 `
 
 const NavContainer = styled.nav`
 
   padding: .4rem;
-  background-color: #1d1d1d;
+  background-color: rgba(32, 32, 35, 0.692);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   height: 100px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   
 
   -webkit-box-shadow: 0px 22px 39px -31px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 22px 39px -31px rgba(0,0,0,0.75);
   box-shadow: 0px 22px 39px -31px rgba(0,0,0,0.75);
 
+  h1 {
+    color: white;
+    
+  }
+
   a{
-    color: #131313;
+    color: white;
     text-decoration: none;
     margin-right: 1rem;
   }
@@ -89,7 +92,6 @@ const NavContainer = styled.nav`
     margin-right: auto;
     text-align: center;
     transition: all .5s ease;
-    background-color:  #1d1d1d;
     a{
       color: #ffffff;
       font-size: 2rem;
@@ -102,7 +104,6 @@ const NavContainer = styled.nav`
         font-size: 1rem;
         color: #ffffff;
         display: inline;
-        
       }
       display: block;
     }
@@ -121,7 +122,7 @@ const NavContainer = styled.nav`
     a{
       font-size: 3rem;
       margin-top: 1rem;
-      color:  #131313;
+      color: #ffffff;
     }
   
 
@@ -134,7 +135,7 @@ const NavContainer = styled.nav`
 `
 
 const BgDiv = styled.div`
-  background-color: #1d1d1d;
+  background-color: #8d8d8d8e;
   position: absolute;
   top: 1000px;
   left: -1000px;

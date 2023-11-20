@@ -21,8 +21,7 @@ const ContainerMain = styled.div`
     position: relative;
 
     .container__portada {
-    width: 1024px;
-    
+      width: 100%;
     img {
       width: 100%;
       height: 323px;

@@ -46,5 +46,6 @@ const CardLove = styled.li`
         text-align: justify;
         font-size: 14px;
         color: #999999;
+        padding: 0 10px;
     }
 `

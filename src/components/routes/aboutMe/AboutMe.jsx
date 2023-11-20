@@ -20,9 +20,7 @@ const AboutMe = () => {
         <LoveMe />
         
       </SectionHero>
-
-
-
+      
     </MainContainer>
   )
 }
@@ -48,7 +46,7 @@ const SectionHero = styled.section`
   max-width: 1024px;
   margin: 0 auto;
 
-  padding-bottom:100px;
+  padding-bottom:50px;
 
 `
 

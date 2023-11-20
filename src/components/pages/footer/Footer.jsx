@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <FooterMain>
-        Footer
+        @ 2023 Jesus Arechider. All Rights Reserved.
     </FooterMain>
   )
 }
@@ -12,8 +12,14 @@ const Footer = () => {
 export default Footer;
 
 const FooterMain = styled.footer`
-    height: 150px;
-    color: black;
-    text-align: center;
-    background-color: #707070;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  color:rgba(255, 255, 255, 0.9);
+  background-color: rgb(32, 32, 35);
+  text-align: center;
+  
 `

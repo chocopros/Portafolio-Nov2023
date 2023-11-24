@@ -9,35 +9,48 @@ const SkillsAlls = () => {
       <Container>
         <CardSkill>
           <i className="fa-solid fa-code"></i>
-          <h3>Frontend Developer</h3>
+          <h3 className='title__card'>Frontend Developer</h3>
           <div className='boddy__card'>
             <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
             <h4>Languages I speak:</h4>
             <ul className='list__code'>
               <li className='code'>
                 <div className='container__img'>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="" />
+                  <img src="/images/logos/HTML5_logo.svg" alt="Logo HTML 5" />
                 </div>
                 <h3>HTML5</h3>
               </li>
               <li className='code'>
                 <div className='container__img'>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png" alt="" />
+                  <img src="/images/logos/CSS3_logo.svg" alt="Logo Css" />
                 </div>
                 <h3>CSS</h3>
               </li>
               <li className='code'>
                 <div className='container__img'>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="" />
+                  <img src="/images/logos/JavaScript-logo.png" alt="Logo Javascript" />
                 </div>
                 <h3>JS</h3>
               </li>
               <li className='code'>
                 <div className='container__img'>
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1137px-React.svg.png" alt="" />
+                  <img src="/images/logos/React.svg.png" alt="Logo React JS" />
                 </div>
                 <h3>React JS</h3>
               </li>
+              <li className='code'>
+                <div className='container__img'>
+                  <img src="/images/logos/redux.svg" alt="Redux React" />
+                </div>
+                <h3>Redux</h3>
+              </li>
+              <li className='code'>
+                <div className='container__img'>
+                  <img src="/images/logos/styled-components-1.svg" alt="Logo styled compoenent" />
+                </div>
+                <h3>Styled-Components</h3>
+              </li>
+              
              
             </ul>
           </div>
@@ -93,8 +106,8 @@ const CardSkill = styled.article`
     
   }
 
-  h3{
-    font-size: 30px;
+  .title__card{
+    font-size: 35px;
     margin: 20px 0;
   }
 
@@ -112,10 +125,10 @@ const CardSkill = styled.article`
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 50px;
       justify-content: space-around;
       align-items: center;
-      margin-top: 20p;
+      margin-top: 20px;
 
     }
 
@@ -123,6 +136,8 @@ const CardSkill = styled.article`
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0 60px;
+      max-width: 100px;
       
 
       .container__img {
@@ -131,6 +146,10 @@ const CardSkill = styled.article`
         img{
           height: 100%;
         }
+      }
+
+      h3 {
+        margin-top: 15px;
       }
     }
     

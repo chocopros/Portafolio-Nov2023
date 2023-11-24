@@ -12,9 +12,6 @@ const AboutMe = () => {
     <MainContainer>
 
       <SectionHero>
-
-        <Portada />
-        <BodyInfo />
         <AboutMeinfo />
         <BioInfoList />
         <LoveMe />
@@ -40,13 +37,13 @@ const MainContainer = styled.main`
 const SectionHero = styled.section`
   
   min-height: 100vh;
-  padding-top: 100px;
+  
   
   color: white;
   max-width: 1024px;
   margin: 0 auto;
 
-  padding-bottom:50px;
+  
 
 `
 

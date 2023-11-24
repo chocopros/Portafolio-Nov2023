@@ -17,7 +17,7 @@ const BodyInfo = () => {
                 <li> <i className="fa-solid fa-briefcase fa-bounce" style={{ color: 'green' }}></i> Avalible</li>
                 <li> <i className="fa-solid fa-link" style={{ color: '#e619c3' }}></i>/works</li>
                 <li> <i className="fa-solid fa-cake-candles"></i> Dicember 1st, 1993</li>
-                <li> <i className="fa-solid fa-calendar-days"></i> Joined Jan 2023</li>
+                <li> <i className="fa-solid fa-calendar-days"></i> Last Update Nov 2023</li>
             </ul>
             
         </BoddyInfo>

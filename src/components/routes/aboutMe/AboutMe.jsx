@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AboutMeinfo from './details/AboutMeinfo';
 import BioInfoList from './details/BioInfoList';
 import LoveMe from './details/LoveMe';
-import Skill from './details/Skills';
+import Skill from './details/Skills.jsx'
 
 const AboutMe = () => {
   return (

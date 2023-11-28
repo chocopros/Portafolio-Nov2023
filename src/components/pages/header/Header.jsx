@@ -28,10 +28,10 @@ function Navbar() {
         
 
         <div className={`links ${clicked ? 'active' : ''}`}>
-          <Link to='/'>About Me </Link>
-          <Link to='/works'>Works</Link>
-          <Link to='/posts'>Posts</Link>
-          <Link to='/contact'>Contact</Link>
+          <Link  to='/'>About Me </Link>
+          <Link  to='/works'>Works</Link>
+          <Link  to='/posts'>Posts</Link>
+          <Link  to='/contact'>Contact</Link>
         </div>
 
         <div className='burguer'>

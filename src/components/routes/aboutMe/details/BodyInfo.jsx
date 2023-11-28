@@ -77,6 +77,7 @@ const BoddyInfo = styled.div`
 
     .details__info{
       display: flex;
+      flex-wrap: wrap;
       gap: 50px;
       list-style: none;
     }

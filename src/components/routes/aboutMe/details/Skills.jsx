@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ImgCode from '../../../Utils/ImgCode'
 
 
 const SkillsAlls = () => {
@@ -14,48 +15,118 @@ const SkillsAlls = () => {
             <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
             <h4>Languages I speak:</h4>
             <ul className='list__code'>
-              <li className='code'>
-                <div className='container__img'>
-                  <img src="/images/logos/HTML5_logo.svg" alt="Logo HTML 5" />
-                </div>
-                <h3>HTML5</h3>
-              </li>
-              <li className='code'>
-                <div className='container__img'>
-                  <img src="/images/logos/CSS3_logo.svg" alt="Logo Css" />
-                </div>
-                <h3>CSS</h3>
-              </li>
-              <li className='code'>
-                <div className='container__img'>
-                  <img src="/images/logos/JavaScript-logo.png" alt="Logo Javascript" />
-                </div>
-                <h3>JS</h3>
-              </li>
-              <li className='code'>
-                <div className='container__img'>
-                  <img src="/images/logos/React.svg.png" alt="Logo React JS" />
-                </div>
-                <h3>React JS</h3>
-              </li>
-              <li className='code'>
-                <div className='container__img'>
-                  <img src="/images/logos/redux.svg" alt="Redux React" />
-                </div>
-                <h3>Redux</h3>
-              </li>
-              <li className='code'>
-                <div className='container__img'>
-                  <img src="/images/logos/styled-components-1.svg" alt="Logo styled compoenent" />
-                </div>
-                <h3>Styled-Components</h3>
-              </li>
-              
-             
+              <ImgCode
+                titleLogo='HTML5'
+                urlLink='/images/logos/HTML5_logo.svg'
+              />
+              <ImgCode
+                titleLogo='CCS3'
+                urlLink='/images/logos/CSS3_logo.svg'
+              />
+              <ImgCode
+                titleLogo='Javascript'
+                urlLink='/images/logos/JavaScript-logo.png'
+              />
+              <ImgCode
+                titleLogo='React Js'
+                urlLink='/images/logos/React.svg.png'
+              />
+              <ImgCode
+                titleLogo='Vite Js'
+                urlLink='/images/logos/vitejs.svg'
+              />
+              <ImgCode
+                titleLogo='Redux'
+                urlLink='/images/logos/redux.svg'
+              />
+              <ImgCode
+                titleLogo='Styled Components'
+                urlLink='/images/logos/styled-components-1.svg'
+              />
+              <ImgCode
+                titleLogo='Flutter'
+                urlLink='/images/logos/flutter.svg'
+              />
+              <ImgCode
+                titleLogo='Netlify'
+                urlLink='/images/logos/netlify.svg'
+              />
             </ul>
           </div>
         </CardSkill>
         
+        <CardSkill>
+          <i className="fa-solid fa-code"></i>
+          <h3 className='title__card'>Backend Developer</h3>
+          <div className='boddy__card'>
+            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <h4>Languages I speak:</h4>
+            <ul className='list__code'>
+              <ImgCode
+                titleLogo='Node Js'
+                urlLink='/images/logos/nodejs-1.svg'
+              />
+              <ImgCode
+                titleLogo='Express'
+                urlLink='/images/logos/express.svg'
+              />
+              <ImgCode
+                titleLogo='Sequelize'
+                urlLink='/images/logos/Sequelize.svg'
+              />
+              <ImgCode
+                titleLogo='Passport-jwt'
+                urlLink='/images/logos/passport.svg'
+              />
+              <ImgCode
+                titleLogo='Postgresql'
+                urlLink='/images/logos/postgresql.svg'
+              />
+              <ImgCode
+                titleLogo='Docker'
+                urlLink='/images/logos\docker.svg'
+              />
+            </ul>
+          </div>
+
+        </CardSkill>
+
+        <CardSkill>
+          <i className="fa-solid fa-code"></i>
+          <h3 className='title__card'>Favorite Tool</h3>
+          <div className='boddy__card'>
+            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <h4>Languages I speak:</h4>
+            <ul className='list__code'>
+              <ImgCode
+                titleLogo='Node Js'
+                urlLink='/images/logos/nodejs-1.svg'
+              />
+              <ImgCode
+                titleLogo='Express'
+                urlLink='/images/logos/express.svg'
+              />
+              <ImgCode
+                titleLogo='Sequelize'
+                urlLink='/images/logos/Sequelize.svg'
+              />
+              <ImgCode
+                titleLogo='Passport-jwt'
+                urlLink='/images/logos/passport.svg'
+              />
+              <ImgCode
+                titleLogo='Postgresql'
+                urlLink='/images/logos/postgresql.svg'
+              />
+              <ImgCode
+                titleLogo='Docker'
+                urlLink='/images/logos\docker.svg'
+              />
+            </ul>
+          </div>
+
+        </CardSkill>
+
       </Container>
     </ContanerSkills>
   )
@@ -83,6 +154,7 @@ const ContanerSkills = styled.div`
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   
@@ -125,33 +197,14 @@ const CardSkill = styled.article`
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: 50px;
+      gap: 10px;
       justify-content: space-around;
       align-items: center;
       margin-top: 20px;
+      padding: 0 35px;
 
     }
 
-    .code {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 60px;
-      max-width: 100px;
-      
-
-      .container__img {
-        height: 100px;
-
-        img{
-          height: 100%;
-        }
-      }
-
-      h3 {
-        margin-top: 15px;
-      }
-    }
     
   }
   

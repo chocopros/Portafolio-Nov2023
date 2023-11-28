@@ -12,13 +12,13 @@ const BodyInfo = () => {
                 <Link to='https://www.linkedin.com/in/jesusarechider/'><button>Go Linkedin </button></Link>
             </div>
             <h2>Jesus Arechider <i className="fa-solid fa-screwdriver-wrench fa-spin-pulse"></i></h2>
-            <h3>Brings ideas to life with code! ✨</h3>
+            <h3>Technology science lover! ✨</h3>
             <p className='des__job'>Development Web. Creative content Creator.
                 Electrical Engineering. IT Support. Marching Learning in process.
             </p>
             <ul className='details__info'>
                 <li> <i className="fa-solid fa-briefcase fa-bounce" style={{ color: 'green' }}></i> Avalible</li>
-                <li> <i className="fa-solid fa-link" style={{ color: '#e619c3' }}></i>/works</li>
+                <Link to='/works'><li> <i className="fa-solid fa-link" style={{ color: '#e619c3' }}></i>/works</li></Link>
                 <li> <i className="fa-solid fa-cake-candles"></i> Dicember 1st, 1993</li>
                 <li> <i className="fa-solid fa-calendar-days"></i> Last Update Nov 2023</li>
             </ul>

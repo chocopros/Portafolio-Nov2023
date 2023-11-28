@@ -95,8 +95,8 @@ const SkillsAlls = () => {
           <i className="fa-solid fa-code"></i>
           <h3 className='title__card'>Favorite Tool Web Developer</h3>
           <div className='boddy__card'>
-            <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-            <h4>Languages I speak:</h4>
+            <p>the simplicity of the tool and the efficiency of the work makes the right tool</p>
+            <h4>My favorite tools:</h4>
             <ul className='list__code'>
               <ImgCode
                 titleLogo='Visual Studio Code'
@@ -149,6 +149,10 @@ const SkillsAlls = () => {
             <h4>Languages I speak:</h4>
             <ul className='list__code'>
               <ImgCode
+                titleLogo='Technical Support'
+                urlLink='/images/logos/technical-support.svg'
+              />
+              <ImgCode
                 titleLogo='Windows Support'
                 urlLink='/images/logos/microsoft-windows-22.svg'
               />
@@ -161,18 +165,27 @@ const SkillsAlls = () => {
                 urlLink='/images/logos/TeamViewer_Logo_Icon_Only.svg.png'
               />
               <ImgCode
-                titleLogo='Hardware'
+                titleLogo='Hardware & Maintenance'
                 urlLink='/images/logos/hardware.jpg'
               />
               <ImgCode
-                titleLogo='Software'
-                urlLink='/images/logos/microsoft-teams-1.svg'
+                titleLogo='Software & Security'
+                urlLink='/images/logos/appStore.svg'
               />
               <ImgCode
                 titleLogo='Data Backup & Recovery'
                 urlLink='/images/logos/backup-svgrepo-com.svg'
               />
-           
+              <ImgCode
+                titleLogo='Networking Support'
+                urlLink='/images/logos/networking-support.svg'
+              />
+              <ImgCode
+                titleLogo='Learning technologies'
+                urlLink='/images/logos/learning-sofware.svg'
+              />
+
+
 
 
             </ul>
@@ -244,6 +257,10 @@ const CardSkill = styled.article`
     h4 { 
       text-align: center;
       margin: 20px 0;
+    }
+
+    p{
+     text-align: center;
     }
 
     .list__code {

@@ -37,6 +37,7 @@ const ElementList = styled.li`
 
       h3 {
         margin-top: 15px;
+        font-size: 15px;
       }
     
     

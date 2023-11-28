@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+
 
 const BodyInfo = () => {
     return (
@@ -7,6 +9,7 @@ const BodyInfo = () => {
 
             <div className='btn__follow'>
                 <button>Follow <i className="fa-brands fa-twitter"></i>  </button>
+                <Link to='https://www.linkedin.com/in/jesusarechider/'><button>Go Linkedin </button></Link>
             </div>
             <h2>Jesus Arechider <i className="fa-solid fa-screwdriver-wrench fa-spin-pulse"></i></h2>
             <h3>Brings ideas to life with code! ✨</h3>

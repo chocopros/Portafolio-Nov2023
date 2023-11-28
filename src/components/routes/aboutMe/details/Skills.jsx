@@ -48,13 +48,13 @@ const SkillsAlls = () => {
                 urlLink='/images/logos/flutter.svg'
               />
               <ImgCode
-                titleLogo='Netlify'
-                urlLink='/images/logos/netlify.svg'
+                titleLogo='GitHub'
+                urlLink='/images/logos/github-icon-1.svg'
               />
             </ul>
           </div>
         </CardSkill>
-        
+
         <CardSkill>
           <i className="fa-solid fa-code"></i>
           <h3 className='title__card'>Backend Developer</h3>
@@ -93,35 +93,88 @@ const SkillsAlls = () => {
 
         <CardSkill>
           <i className="fa-solid fa-code"></i>
-          <h3 className='title__card'>Favorite Tool</h3>
+          <h3 className='title__card'>Favorite Tool Web Developer</h3>
           <div className='boddy__card'>
             <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
             <h4>Languages I speak:</h4>
             <ul className='list__code'>
               <ImgCode
-                titleLogo='Node Js'
-                urlLink='/images/logos/nodejs-1.svg'
+                titleLogo='Visual Studio Code'
+                urlLink='/images/logos/visual-studio-code-1.svg'
               />
               <ImgCode
-                titleLogo='Express'
-                urlLink='/images/logos/express.svg'
+                titleLogo='DBeaver'
+                urlLink='/images/logos/DBeaver-head.png'
               />
               <ImgCode
-                titleLogo='Sequelize'
-                urlLink='/images/logos/Sequelize.svg'
+                titleLogo='Adobe Photoshop'
+                urlLink='/images/logos/adobe-photoshop.svg'
               />
               <ImgCode
-                titleLogo='Passport-jwt'
-                urlLink='/images/logos/passport.svg'
+                titleLogo='Office 365 package'
+                urlLink='/images/logos/Microsoft-365.svg'
               />
               <ImgCode
-                titleLogo='Postgresql'
-                urlLink='/images/logos/postgresql.svg'
+                titleLogo='Teams'
+                urlLink='/images/logos/microsoft-teams-1.svg'
               />
               <ImgCode
-                titleLogo='Docker'
-                urlLink='/images/logos\docker.svg'
+                titleLogo='Discord'
+                urlLink='/images/logos/discord.svg'
               />
+              <ImgCode
+                titleLogo='Gmail'
+                urlLink='/images/logos/gmail-icon.svg'
+              />
+              <ImgCode
+                titleLogo='Slack'
+                urlLink='/images/logos/slack.svg'
+              />
+              <ImgCode
+                titleLogo='Notion'
+                urlLink='/images/logos/notion-2.svg'
+              />
+
+
+            </ul>
+          </div>
+
+        </CardSkill>
+
+        <CardSkill>
+          <i className="fa-solid fa-code"></i>
+          <h3 className='title__card'>IT Support</h3>
+          <div className='boddy__card'>
+            <p>If you have a backup, the hardware and software problems are small and temporary.</p>
+            <h4>Languages I speak:</h4>
+            <ul className='list__code'>
+              <ImgCode
+                titleLogo='Windows Support'
+                urlLink='/images/logos/microsoft-windows-22.svg'
+              />
+              <ImgCode
+                titleLogo='Linux Support'
+                urlLink='/images/logos/linux-tux.svg'
+              />
+              <ImgCode
+                titleLogo='TeamVierwer'
+                urlLink='/images/logos/TeamViewer_Logo_Icon_Only.svg.png'
+              />
+              <ImgCode
+                titleLogo='Hardware'
+                urlLink='/images/logos/hardware.jpg'
+              />
+              <ImgCode
+                titleLogo='Software'
+                urlLink='/images/logos/microsoft-teams-1.svg'
+              />
+              <ImgCode
+                titleLogo='Data Backup & Recovery'
+                urlLink='/images/logos/backup-svgrepo-com.svg'
+              />
+           
+
+
             </ul>
           </div>
 

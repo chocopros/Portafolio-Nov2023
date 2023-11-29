@@ -8,7 +8,7 @@ const Portada = () => {
                 <img src="https://www.iamthecode.org/wp-content/uploads/2021/03/florian-olivo-4hbJ-eymZ1o-unsplash-scaled-e1616631053918.jpg" alt="portada user" />
             </div>
             <div className='container__photo'>
-                <img src="public\images\profile270x270.jpg" alt="" />
+                <img src="/images/profile270x270.jpg" alt="photo perfil" />
             </div>
         </ContainerMain>
     )

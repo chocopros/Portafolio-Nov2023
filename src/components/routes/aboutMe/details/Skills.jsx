@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ImgCode from '../../../Utils/ImgCode'
+import ImgCode from './components/utils/ImgCode.jsx'
 
 
 const SkillsAlls = () => {

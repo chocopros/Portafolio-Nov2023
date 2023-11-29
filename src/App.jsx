@@ -1,13 +1,14 @@
 import { Route, Routes } from 'react-router-dom'
-import Header from './Components/Pages/header/Header.jsx'
+import Header from './components/pages/header/Header.jsx'
 import AboutMe from './components/routes/aboutMe/AboutMe'
 import Footer from './components/pages/footer/Footer'
 import Portada from './components/routes/aboutMe/details/Portada'
-import BodyInfo from './Components/Routes/aboutMe/details/BodyInfo.jsx'
+import BodyInfo from './components/routes/aboutMe/details/BodyInfo.jsx'
 import styled from 'styled-components'
 
 const App = () => {
 
+  
 
   return (
     <>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import MyInfoPdf from './details/MyInfoPdf'
+import ChatInReal from './details/ChatInReal'
 
 
 const Contact = () => {
@@ -10,6 +11,9 @@ const Contact = () => {
         <SectionHero>
 
             <MyInfoPdf />
+
+            <ChatInReal />
+
 
         </SectionHero>
 

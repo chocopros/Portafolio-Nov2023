@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const LogoCallCard = ( { urlLogo, title }) => {
+const LogoCallCard = ({ urlLogo, title }) => {
   return (
     <CardCall>
       <div className='container__img'>
@@ -17,6 +17,12 @@ export default LogoCallCard
 const CardCall = styled.li`
   display: flex;
   flex-direction: column;
+
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.15)
+  }
   
 
   h2 {

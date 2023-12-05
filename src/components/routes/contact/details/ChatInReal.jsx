@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import LogoCallCard from '../../../utils/LogoCallCard'
+import {Link} from 'react-router-dom'
+
+
 
 
 const ChatInReal = () => {
@@ -11,20 +14,27 @@ const ChatInReal = () => {
 
         <ContainerLogo>
 
-            <LogoCallCard
-                title={`Whatsapp`}
-                urlLogo={`/images/logos/whatsapp.svg`}
-            />
+            <Link to={`https://api.whatsapp.com/send?phone=584148100986&text=Hello%2C%20Jesus%2C%20I%20have%20seen%20your%20portfolio!%F0%9F%A6%BE`}>
+                <LogoCallCard
+                    title={`Whatsapp`}
+                    urlLogo={`/images/logos/whatsapp.svg`}
+                />
+            </Link>
 
-            <LogoCallCard
-                title={`Telegram`}
-                urlLogo={`/images/logos/telegram.svg`}
-            />
+            <Link to={`https://telegram.me/Jesuschock`}>
+                <LogoCallCard
+                    title={`Telegram`}
+                    urlLogo={`/images/logos/telegram.svg`}
+                />
+            </Link>
 
-            <LogoCallCard
-                title={`Discord`}
-                urlLogo={`/images/logos/discord.svg`}
-            />
+            <Link>
+                <LogoCallCard
+                    title={`Discord`}
+                    urlLogo={`/images/logos/discord.svg`}
+                />
+            </Link>
+
 
         </ContainerLogo>
 
@@ -46,9 +56,14 @@ const ContainerLogo = styled.ul`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap:  50px 150px;
 
     margin: 30px 0;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
 
 `
 

@@ -6,6 +6,7 @@ import Portada from './components/routes/aboutMe/details/Portada'
 import BodyInfo from './components/routes/aboutMe/details/BodyInfo.jsx'
 import styled from 'styled-components'
 import Contact from './components/routes/contact/Contact.jsx'
+import Works from './components/routes/works/Works.jsx'
 
 const App = () => {
 
@@ -27,7 +28,7 @@ const App = () => {
       <Routes>
 
         <Route path='/' element={<AboutMe />} />
-        <Route path='/works' element={<h1>Works</h1>} />
+        <Route path='/works' element={<Works />} />
         <Route path='/posts' element={<h1>Post</h1>} />
         <Route path='/contact' element={<Contact />} />
 

@@ -1,19 +1,38 @@
 import React from 'react'
 import styled from 'styled-components';
+import CardWork from '../../../utils/CardWork';
+import { Link } from 'react-router-dom';
 
 const RecentWorks = () => {
   return (
     <Works>
         <h2>My recent Works</h2>
         <div className='container__cardworks'>
-            <div className='img__portada'>
-                <img src="/images/works/pokedexWeb.JPG" alt="" />
-            </div>
-            <article className='cardwork'>
-                <div className='boddy_title'>
-                    <h3>Pokemon</h3>
-                </div>
-            </article>
+
+            {/* POKEDEX-API */}
+            <Link to={`https://pokeapi-jarechider.netlify.app/#/`}>
+                <CardWork 
+                    title={`Pokedex`}
+                    img={'/images/works/pokedexWeb.JPG'}
+                />  
+            </Link>
+
+            {/* RICK&MORTY-API */}
+            <Link to={`https://rickandmorty-anmyandjesus.netlify.app/`}>
+                <CardWork 
+                    title={`Rick & Morty`}
+                    img={'/images/works/RM.jpg'}
+                />  
+            </Link>
+
+            {/* TIMECOUNTRY-API */}
+            <Link to={`https://wheatermap-arechider.netlify.app/`}>
+                <CardWork 
+                    title={`Wheater Map`}
+                    img={'/images/works/TimeCountry.jpg'}
+                />  
+            </Link>
+           
         </div>
     </Works>
   )
@@ -30,22 +49,16 @@ const Works = styled.section`
 
     .container__cardworks {
         margin-top: 50px;
+        padding: 0 25px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .cardwork {
 
-    }
+    
 
-    .img__portada {
-
-        height: 250px;
-        width: 350px;
-        
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover ;
-        }
-    }
     
 `

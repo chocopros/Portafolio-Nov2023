@@ -3,11 +3,15 @@ import styled from 'styled-components'
 import RecentWorks from './RecentWork/RecentWorks';
 
 
+
 const Works = () => {
   return (
     <MainContainer>
         <SectionHero>
-            <RecentWorks />
+            
+                <RecentWorks />
+            
+            
         </SectionHero>
     </MainContainer>
   )

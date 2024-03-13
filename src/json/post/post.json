@@ -1,0 +1,26 @@
+[
+    {
+        "titulo": "Título del post1",
+        "autor": "jArechider",
+        "fecha": "2024-03-13",
+        "contenido": "Texto del post",
+        "etiquetas": ["etiqueta1", "etiqueta2"],
+        "imagen": "https://imagen.research.google/"
+    },
+    {
+        "titulo": "Título del post2",
+        "autor": "jArechider",
+        "fecha": "2024-03-13",
+        "contenido": "Texto del post",
+        "etiquetas": ["etiqueta1", "etiqueta2"],
+        "imagen": "https://imagen.research.google/"
+    },
+    {
+        "titulo": "Título del post3",
+        "autor": "jArechider",
+        "fecha": "2024-03-13",
+        "contenido": "Texto del post",
+        "etiquetas": ["etiqueta1", "etiqueta2"],
+        "imagen": "https://imagen.research.google/"
+    }
+]

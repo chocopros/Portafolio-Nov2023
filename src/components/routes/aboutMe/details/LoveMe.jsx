@@ -11,19 +11,19 @@ const LoveMe = () => {
         <CardsLoveMe
           title={`Terraria`}
           linkImg={`/images/Love/Terraria.webp`}
-          description={`Terraria es un videojuego de acción, aventura y de sandbox`}
+          description={`Terraria is an action, adventure and sandbox video game`}
         />
 
         <CardsLoveMe
           title={`Dota 2`}
           linkImg={`/images/Love/DOTA2.webp`}
-          description={`MOBA perteneciente al género de Arena de batalla en línea ARTS.`}
+          description={`MOBA belonging to the ARTS online battle arena genre.`}
         />
 
         <CardsLoveMe
           title={`Plants Vs Zombies`}
           linkImg={`/images/Love/PvsZ.webp`}
-          description={`¡Vienen los zombis! Protege los cerebros y planta tus defensas`}
+          description={`¡The zombies are coming! Protect the brains and plant your defenses`}
         />
 
       </ul>

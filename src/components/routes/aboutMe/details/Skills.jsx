@@ -86,6 +86,14 @@ const SkillsAlls = () => {
                 titleLogo='Docker'
                 urlLink='/images/logos\docker.svg'
               />
+              <ImgCode
+                titleLogo='Python'
+                urlLink='public/images/logos/python-5.svg'
+              />
+              <ImgCode
+                titleLogo='Flask'
+                urlLink='public/images/logos/flask-svgrepo-com (1).svg'
+              />
             </ul>
           </div>
 

@@ -7,9 +7,14 @@ const ArticlePost = ( {title,author,content,fecha} ) => {
         
         <NewPost>
             <div className='header__cabezera'>
-                <div>fotito</div>
-                <div>@{author}</div>
-                <div>{fecha}</div>
+                <div className='image__profile'>
+                    <img src="images/profile2.jpg" alt="" />
+                </div>
+                <div className='title__author'>
+                    <h3>{author}</h3>
+                    <div>{fecha}</div>
+                </div>
+                
             </div>
             <div className="body__post">
                 <h2>{title}</h2>
@@ -33,6 +38,20 @@ const NewPost = styled.article`
 
     .header__cabezera {
         display: flex;
+        align-items: center;
+
+
+        .image__profile{
+            width: 80px;
+            height: 80px;
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+        }
+    }
 
     }
     

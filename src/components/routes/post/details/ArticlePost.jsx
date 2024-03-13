@@ -28,6 +28,8 @@ const NewPost = styled.article`
     justify-content: center;
     height: 400px;
     width: 630px;
+    border: solid white 1px;
+    border-radius: 10px;
 
     .header__cabezera {
         display: flex;

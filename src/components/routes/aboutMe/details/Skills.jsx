@@ -88,11 +88,11 @@ const SkillsAlls = () => {
               />
               <ImgCode
                 titleLogo='Python'
-                urlLink='public/images/logos/python-5.svg'
+                urlLink='/images/logos/python-5.svg'
               />
               <ImgCode
                 titleLogo='Flask'
-                urlLink='public/images/logos/flask-svgrepo-com (1).svg'
+                urlLink='/images/logos/flask-svgrepo-com (1).svg'
               />
             </ul>
           </div>

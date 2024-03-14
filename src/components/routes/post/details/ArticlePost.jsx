@@ -32,7 +32,7 @@ export default ArticlePost
 const NewPost = styled.article`
     display: flex;
     flex-direction: column;
-    max-height: 430px;
+    max-height: 385px;
     width: 630px;
     border: solid #e3e3e351 1px;
     border-radius: 10px;
@@ -64,9 +64,7 @@ const NewPost = styled.article`
 
             h3{
                 font-size: 33px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-height: 96px;
+                
             }
 
             span{
@@ -81,10 +79,18 @@ const NewPost = styled.article`
         gap: 20px 0;
         margin-bottom: 20px;
 
-        p{
+        h2{
+            font-size: 20px;
             overflow: hidden;
             text-overflow: ellipsis;
-            height: 85px;
+            max-height: 64px;
+        }
+
+        p{
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 115px;
         }
 
     }

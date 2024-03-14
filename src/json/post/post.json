@@ -1,26 +1,29 @@
 [
     {
-        "titulo": "Título del post1",
-        "autor": "jArechider",
-        "fecha": "2024-03-13",
-        "contenido": "Texto del post",
-        "etiquetas": ["etiqueta1", "etiqueta2"],
-        "imagen": "https://imagen.research.google/"
+        "titulo": "Chat gemini as an excellent programming tool",
+        "autor": "JesusChock",
+        "fecha": "18 Jan 2024",
+        "contenido": "Gemini is an excellent support tool to refresh and remember, it additionally gives you code suggestions, I can write code, generate documentation, debug and even generate code from certain instructions, learn to program. ",
+        "etiquetas": ["AI", "Artificial Intelligence", "Google"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png",
+        "referencia": "https://gemini.google.com/app"
     },
     {
         "titulo": "Título del post2",
-        "autor": "jArechider",
+        "autor": "JesusChock",
         "fecha": "2024-03-13",
         "contenido": "Texto del post",
         "etiquetas": ["etiqueta1", "etiqueta2"],
-        "imagen": "https://imagen.research.google/"
+        "imagen": "https://imagen.research.google/",
+        "referencia": ""
     },
     {
         "titulo": "Título del post3",
-        "autor": "jArechider",
+        "autor": "JesusChock",
         "fecha": "2024-03-13",
         "contenido": "Texto del post",
         "etiquetas": ["etiqueta1", "etiqueta2"],
-        "imagen": "https://imagen.research.google/"
+        "imagen": "https://imagen.research.google/",
+        "referencia": ""
     }
 ]

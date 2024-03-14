@@ -17,6 +17,7 @@ const Post = () => {
                                 content={post?.contenido}
                                 author={post?.autor}
                                 fecha={post?.fecha}
+                                reference={post?.referencia}
                             />
                         ))
                     }
@@ -47,5 +48,6 @@ const SectionHero = styled.section`
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px 0;
+    padding: 0 30px;
   }
 `

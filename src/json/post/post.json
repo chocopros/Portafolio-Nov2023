@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "titulo": "Chat gemini as an excellent programming tool",
         "autor": "@JesusChock",
         "fecha": "18 Jan 2024",
@@ -9,20 +10,22 @@
         "referencia": "https://gemini.google.com/app"
     },
     {
+        "id": 2,
         "titulo": "The important thing about documenting Code",
         "autor": "@JesusChock",
         "fecha": "21 Dec 2023",
         "contenido": "It is a fundamental part of software development. Writing good documentation can have many benefits, such as: Makes code easier to understand, Improve collaboration, Reduce maintenance time, Increase code quality, Facilitates code reuse.",
-        "etiquetas": ["etiqueta1", "etiqueta2"],
+        "etiquetas": ["good practices", "documentation"],
         "imagen": "https://imagen.research.google/",
         "referencia": ""
     },
     {
+        "id": 3,
         "titulo": "It is very important many times to write down and practice what you have learned.",
         "autor": "@JesusChock",
         "fecha": "07 Nov 2023",
         "contenido": "We must sometimes take free time to practice functions or frameworks learned, since this will help us reinforce and better understand what we have learned.",
-        "etiquetas": ["etiqueta1", "etiqueta2"],
+        "etiquetas": ["practices", "perseverance"],
         "imagen": "https://imagen.research.google/",
         "referencia": ""
     }

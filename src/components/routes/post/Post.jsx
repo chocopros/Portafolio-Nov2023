@@ -8,16 +8,18 @@ const Post = () => {
     return (
         <MainContainer>
             <SectionHero>
-                <h2>Notes</h2>
+                <h2 className='title__principal'>Notes</h2>
                 <div className='post__container'>
                     {
                         listPost.map(post => (
                             <ArticlePost
+                            key={post.id}
                                 title={post?.titulo}
                                 content={post?.contenido}
                                 author={post?.autor}
                                 fecha={post?.fecha}
                                 reference={post?.referencia}
+                                tags = {post?.etiquetas}
                             />
                         ))
                     }
@@ -43,11 +45,16 @@ const SectionHero = styled.section`
   max-width: 1024px;
   margin: 0 auto;
 
+  .title__principal{
+    font-size: 35px;
+    margin-left: 30px ;
+  }
+
   .post__container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px 0;
-    padding: 0 30px;
+    padding: 50px 30px;
   }
 `

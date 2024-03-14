@@ -24,9 +24,10 @@ const ElementList = styled.li`
       width: 100px;
       max-height: 140px;
       
+      
 
       .container__img {
-        height: 100px;
+        height: 150px;
 
         img{
           height: 100%;

@@ -13,7 +13,7 @@ const Post = () => {
                     {
                         listPost.map(post => (
                             <ArticlePost
-                            key={post.id}
+                            key={post?.id}
                                 title={post?.titulo}
                                 content={post?.contenido}
                                 author={post?.autor}

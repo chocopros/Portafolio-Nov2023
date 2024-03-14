@@ -42,7 +42,8 @@ const BoddyInfo = styled.div`
       justify-content: end;
       align-items: center;
       margin: 25px 0;
-      
+      min-height: 51px;
+
 
       button {
         color: white;
@@ -54,6 +55,7 @@ const BoddyInfo = styled.div`
         font-size: 16px;
         font-weight: 700;
         transition: all 1s ease ;
+        
       }
 
       i:hover{
@@ -62,6 +64,12 @@ const BoddyInfo = styled.div`
 
       button:hover{
         background-color: #0084b4;
+      }
+    }
+
+    @media (max-width: 885px) {
+      button {
+         display: none;
       }
     }
 

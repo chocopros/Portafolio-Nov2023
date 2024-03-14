@@ -275,7 +275,7 @@ const CardSkill = styled.article`
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 30px 0;
       justify-content: space-around;
       align-items: center;
       margin-top: 20px;

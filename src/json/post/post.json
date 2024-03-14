@@ -1,5 +1,15 @@
 [
     {
+        "id": 4,
+        "titulo": "Excellent book to learn Javascript: Book >>Javascript Eloquente <<",
+        "autor": "@JesusChock",
+        "fecha": "11 March 2024",
+        "contenido": "If you want to learn javascript in a self-taught way, this book could help you in a way that you can very easily understand the javascript language, with practical and interesting exercises, highly recommended personally.",
+        "etiquetas": ["Book", "Javascript", "Learning"],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png",
+        "referencia": "https://eloquent-javascript-es.vercel.app/"
+    },
+    {
         "id": 1,
         "titulo": "Chat gemini as an excellent programming tool",
         "autor": "@JesusChock",

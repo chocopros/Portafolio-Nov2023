@@ -50,8 +50,8 @@ const LiCV = styled.li`
     }
 
     p {
-      font-size: 12px;
-      color: #7d7d7d
+      font-size: 11px;
+      color: #b3b3b3
       
       
     }

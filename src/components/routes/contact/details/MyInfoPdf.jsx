@@ -12,8 +12,9 @@ const MyInfoPdf = () => {
             <ContainerPdf>
        
                 <LinkCV 
-                    linkDocument='/documents/CV-developerWeb-JesusArechider-2022.pdf'
+                    linkDocument='/documents/CV-JESUSARECHIDER-DEV-2024.pdf'
                     titleCv='Development Web'
+                    LastUpdate='2024-MAR-17'
                     
                 />
 

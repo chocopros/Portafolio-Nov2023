@@ -5,7 +5,7 @@ const CardsLoveMe = ( {title, description,linkImg} ) => {
     return (
         <CardLove>
             <div className='container__img'>
-                <img src={linkImg} alt="Terraria VideoGame" />
+                <img src={linkImg} alt={title} />
             </div>
             <h3>{title}</h3>
             <p>{description}</p>

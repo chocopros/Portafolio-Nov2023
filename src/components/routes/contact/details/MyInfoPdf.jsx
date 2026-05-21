@@ -24,7 +24,7 @@ const MyInfoPdf = () => {
                 />
 
                 <LinkCV 
-                    linkDocument='/documents\CV - JESUS ARECHIDER - INGENIERO ELECTRICISTA.pdf'
+                    linkDocument='/documents/CV - JESUS ARECHIDER - INGENIERO ELECTRICISTA.pdf'
                     titleCv='Electrical Engineer'
                 />
 

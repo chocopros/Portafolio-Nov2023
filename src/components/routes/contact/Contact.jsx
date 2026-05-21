@@ -24,8 +24,8 @@ const Contact = () => {
 export default Contact
 
 const MainContainer = styled.main`
-
   background-color: rgb(32, 32, 35);
+  padding-top: 100px; /* Accounts for fixed navbar spacing */
 `;
 
 const SectionHero = styled.section`

@@ -9,7 +9,7 @@ const ArticlePost = ({ title, author, content, fecha, reference, tags }) => {
 
             <div className='header__cabezera'>
                 <div className='image__profile'>
-                    <img src="images/profile2.jpg" alt="" />
+                    <img src="/images/profile2.jpg" alt={author} />
                 </div>
                 <div className='autor__content'>
                     <div className='title__author'>
@@ -29,7 +29,9 @@ const ArticlePost = ({ title, author, content, fecha, reference, tags }) => {
             <div className="body__post">
                 <h2>{title}</h2>
                 <p>{content}</p>
-                <a href={reference}>Go to...</a>
+                {reference && (
+                    <a href={reference} target="_blank" rel="noopener noreferrer">Go to source...</a>
+                )}
             </div>
 
         </NewPost>

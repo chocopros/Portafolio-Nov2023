@@ -6,7 +6,7 @@ const LinkCV = ({linkDocument, titleCv, LastUpdate}) => {
     <LiCV>
         <a href={linkDocument}>
           <div className="container__img">
-            <img src="/images/logos\pdf-file-svgrepo-com.svg" alt="" />
+            <img src="/images/logos/pdf-file-svgrepo-com.svg" alt="" />
           </div>
           <h3>{titleCv}</h3>
           <p>{`last update: ${LastUpdate || `2023-NOV-1`}`}</p>

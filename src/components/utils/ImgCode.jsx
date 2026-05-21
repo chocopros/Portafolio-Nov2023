@@ -15,31 +15,28 @@ const ImgCode = ( {titleLogo, urlLink}) => {
 export default ImgCode
 
 const ElementList = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 40px;
+  width: 100px;
+  height: 140px;
 
-  
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 10px 60px;
-      width: 100px;
-      max-height: 140px;
-      
-      
+  .container__img {
+    height: 90px;
+    width: 90px;
 
-      .container__img {
-        height: 150px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 
-        img{
-          height: 100%;
-          width: 100%;
-          object-fit: contain;
-        }
-      }
-
-      h3 {
-        margin-top: 15px;
-        font-size: 15px;
-      }
-    
-    
+  h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #e0e0e0;
+  }
 `

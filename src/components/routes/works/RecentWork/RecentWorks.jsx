@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 import CardWork from '../../../utils/CardWork';
-import { Link } from 'react-router-dom';
 
 const RecentWorks = () => {
   return (
@@ -10,28 +9,28 @@ const RecentWorks = () => {
         <div className='container__cardworks'>
 
             {/* POKEDEX-API */}
-            <Link to={`https://pokeapi-jarechider.netlify.app/#/`}>
+            <a href="https://pokeapi-jarechider.netlify.app/#/" target="_blank" rel="noopener noreferrer">
                 <CardWork 
-                    title={`Pokedex`}
-                    img={'/images/works/pokedexWeb.JPG'}
+                    title="Pokedex"
+                    img="/images/works/pokedexWeb.JPG"
                 />  
-            </Link>
+            </a>
 
             {/* RICK&MORTY-API */}
-            <Link to={`https://rickandmorty-anmyandjesus.netlify.app/`}>
+            <a href="https://rickandmorty-anmyandjesus.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardWork 
-                    title={`Rick & Morty`}
-                    img={'/images/works/RM.jpg'}
+                    title="Rick & Morty"
+                    img="/images/works/RM.jpg"
                 />  
-            </Link>
+            </a>
 
             {/* TIMECOUNTRY-API */}
-            <Link to={`https://wheatermap-arechider.netlify.app/`}>
+            <a href="https://wheatermap-arechider.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <CardWork 
-                    title={`Wheater Map`}
-                    img={'/images/works/TimeCountry.jpg'}
+                    title="Weather Map"
+                    img="/images/works/TimeCountry.jpg"
                 />  
-            </Link>
+            </a>
            
         </div>
     </Works>

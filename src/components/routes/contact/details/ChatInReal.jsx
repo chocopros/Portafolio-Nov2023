@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import LogoCallCard from '../../../utils/LogoCallCard'
-import {Link} from 'react-router-dom'
-
-
-
 
 const ChatInReal = () => {
   return (
@@ -14,32 +10,28 @@ const ChatInReal = () => {
 
         <ContainerLogo>
 
-            <Link to={`https://api.whatsapp.com/send?phone=584148100986&text=Hello%2C%20Jesus%2C%20I%20have%20seen%20your%20portfolio!%F0%9F%A6%BE`}>
+            <a href="https://api.whatsapp.com/send?phone=584148100986&text=Hello%2C%20Jesus%2C%20I%20have%20seen%20your%20portfolio!%F0%9F%A6%BE" target="_blank" rel="noopener noreferrer">
                 <LogoCallCard
-                    title={`Whatsapp`}
-                    urlLogo={`/images/logos/whatsapp.svg`}
+                    title="Whatsapp"
+                    urlLogo="/images/logos/whatsapp.svg"
                 />
-            </Link>
+            </a>
 
-            <Link to={`https://telegram.me/Jesuschock`}>
+            <a href="https://telegram.me/Jesuschock" target="_blank" rel="noopener noreferrer">
                 <LogoCallCard
-                    title={`Telegram`}
-                    urlLogo={`/images/logos/telegram.svg`}
+                    title="Telegram"
+                    urlLogo="/images/logos/telegram.svg"
                 />
-            </Link>
+            </a>
 
-            <Link>
+            <a href="https://discord.com/users/jesuschock" target="_blank" rel="noopener noreferrer">
                 <LogoCallCard
-                    title={`Discord`}
-                    urlLogo={`/images/logos/discord.svg`}
+                    title="Discord"
+                    urlLogo="/images/logos/discord.svg"
                 />
-            </Link>
-
+            </a>
 
         </ContainerLogo>
-
-        
-        
 
     </ChatReal>
   )

@@ -5,7 +5,7 @@ import ImgCode from '../../../utils/ImgCode'
 
 const SkillsAlls = () => {
   return (
-    <ContanerSkills>
+    <SkillsContainer>
       <h2>Skills</h2>
       <Container>
         <CardSkill>
@@ -20,7 +20,7 @@ const SkillsAlls = () => {
                 urlLink='/images/logos/HTML5_logo.svg'
               />
               <ImgCode
-                titleLogo='CCS3'
+                titleLogo='CSS3'
                 urlLink='/images/logos/CSS3_logo.svg'
               />
               <ImgCode
@@ -84,7 +84,7 @@ const SkillsAlls = () => {
               />
               <ImgCode
                 titleLogo='Docker'
-                urlLink='/images/logos\docker.svg'
+                urlLink='/images/logos/docker.svg'
               />
               <ImgCode
                 titleLogo='Python'
@@ -169,7 +169,7 @@ const SkillsAlls = () => {
                 urlLink='/images/logos/linux-tux.svg'
               />
               <ImgCode
-                titleLogo='TeamVierwer'
+                titleLogo='TeamViewer'
                 urlLink='/images/logos/TeamViewer_Logo_Icon_Only.svg.png'
               />
               <ImgCode
@@ -202,28 +202,25 @@ const SkillsAlls = () => {
         </CardSkill>
 
       </Container>
-    </ContanerSkills>
+    </SkillsContainer>
   )
 }
 
 export default SkillsAlls
 
-const ContanerSkills = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 0 50px;
+const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
 
-    h2 {
-      font-size: 35px;
-      transition: all 1s ease;
-    }
+  h2 {
+    font-size: 35px;
+    transition: color 0.4s ease;
+  }
 
-    h2:hover{
-      color: red;
-    }
-
-
-    
+  h2:hover {
+    color: rgb(255, 51, 187);
+  }
 `
 
 const Container = styled.div`
@@ -231,59 +228,79 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  width: 100%;
 `
 
 const CardSkill = styled.article`
   max-width: 924px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1b1b1b;
-  border-radius: 15px;
-  padding: 50px 50px;
-  margin: 30px 0;
+  background-color: #1a1a1e;
+  border-radius: 16px;
+  padding: 3rem 1.5rem;
+  margin: 20px 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 51, 187, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 25px rgba(255, 51, 187, 0.04);
+  }
+
+  @media(min-width: 768px) {
+    padding: 3rem 3rem;
+  }
 
   i {
     font-size: 36px;
-    border: 15px solid black;
-    background-color: black;
+    border: 15px solid #111;
+    background-color: #111;
+    color: rgb(255, 51, 187);
     border-radius: 50%;
-    
   }
 
-  .title__card{
-    font-size: 35px;
+  .title__card {
+    font-size: 30px;
     margin: 20px 0;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
   }
 
   .boddy__card {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
 
     h4 { 
       text-align: center;
-      margin: 20px 0;
+      margin: 25px 0 15px 0;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 500;
     }
 
-    p{
-     text-align: center;
+    p {
+      text-align: center;
+      color: #b0b0b5;
+      line-height: 1.6;
     }
 
     .list__code {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: 30px 0;
+      gap: 30px 10px;
       justify-content: space-around;
       align-items: center;
       margin-top: 20px;
-      padding: 0 35px;
+      padding: 0 10px;
 
+      @media(min-width: 768px) {
+        padding: 0 35px;
+      }
     }
-
-    
   }
-  
 `

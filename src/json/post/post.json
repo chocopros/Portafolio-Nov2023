@@ -1,42 +1,92 @@
 [
-    {
-        "id": 4,
-        "titulo": "Excellent book to learn Javascript: Book >>Javascript Eloquente <<",
-        "autor": "@JesusChock",
-        "fecha": "11 March 2024",
-        "contenido": "If you want to learn javascript in a self-taught way, this book could help you in a way that you can very easily understand the javascript language, with practical and interesting exercises, highly recommended personally.",
-        "etiquetas": ["Book", "Javascript", "Learning"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png",
-        "referencia": "https://eloquent-javascript-es.vercel.app/"
-    },
-    {
-        "id": 1,
-        "titulo": "Chat gemini as an excellent programming tool",
-        "autor": "@JesusChock",
-        "fecha": "18 Jan 2024",
-        "contenido": "Gemini is an excellent support tool to refresh and remember, it additionally gives you code suggestions, I can write code, generate documentation, debug and even generate code from certain instructions, learn to program. ",
-        "etiquetas": ["AI", "Artificial Intelligence", "Google"],
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png",
-        "referencia": "https://gemini.google.com/app"
-    },
-    {
-        "id": 2,
-        "titulo": "The important thing about documenting Code",
-        "autor": "@JesusChock",
-        "fecha": "21 Dec 2023",
-        "contenido": "It is a fundamental part of software development. Writing good documentation can have many benefits, such as: Makes code easier to understand, Improve collaboration, Reduce maintenance time, Increase code quality, Facilitates code reuse.",
-        "etiquetas": ["good practices", "documentation"],
-        "imagen": "https://imagen.research.google/",
-        "referencia": ""
-    },
-    {
-        "id": 3,
-        "titulo": "It is very important many times to write down and practice what you have learned.",
-        "autor": "@JesusChock",
-        "fecha": "07 Nov 2023",
-        "contenido": "We must sometimes take free time to practice functions or frameworks learned, since this will help us reinforce and better understand what we have learned.",
-        "etiquetas": ["practices", "perseverance"],
-        "imagen": "https://imagen.research.google/",
-        "referencia": ""
-    }
+  {
+    "id": 1,
+    "titulo": "Exploring Gemini 1.5: The Power of a 2 Million Context Window",
+    "autor": "@JesusChock",
+    "fecha": "18 May 2026",
+    "contenido": "Google's Gemini 1.5 Pro has completely revolutionized context handling in Large Language Models. Being able to process up to 2 million tokens of context means you can analyze entire codebases, multiple massive books, or hours of high-definition video in a single prompt. The new Gemini 1.5 Flash model also brings incredibly low latency and high efficiency at a fraction of the cost, making production-grade agentic workflows and automated reasoning highly viable.",
+    "etiquetas": ["AI", "Gemini", "Google", "LLM"],
+    "referencia": "https://deepmind.google/technologies/gemini/"
+  },
+  {
+    "id": 2,
+    "titulo": "Claude 3.5 Sonnet: Setting New Benchmarks for Coding Agents",
+    "autor": "@JesusChock",
+    "fecha": "02 May 2026",
+    "contenido": "Anthropic's latest release, Claude 3.5 Sonnet, has set a new state-of-the-art standard for coding assistance, reasoning, and visual analysis. It excels dramatically in multi-step task planning and code generation, outperforming larger frontier models while remaining fast and cost-effective. For pair programming, test suite generation, and autonomous agentic developer pipelines, it is an indispensable tool.",
+    "etiquetas": ["AI", "Claude", "Anthropic", "Coding"],
+    "referencia": "https://www.anthropic.com/news/claude-3-5-sonnet"
+  },
+  {
+    "id": 3,
+    "titulo": "Containerizing Modern Web Applications with Docker",
+    "autor": "@JesusChock",
+    "fecha": "28 Apr 2026",
+    "contenido": "Docker has shifted from a DevOps preference to a fundamental developer skill. By isolating application runtimes into lightweight, reproducible containers, Docker completely solves the classic 'it works on my machine' dilemma. Combining Docker with Docker Compose lets you orchestrate frontend, backend, caching, and database microservices with a single command, ensuring perfect staging-production parity.",
+    "etiquetas": ["DevOps", "Docker", "Containers", "Microservices"],
+    "referencia": "https://www.docker.com/"
+  },
+  {
+    "id": 4,
+    "titulo": "The Rise of Agentic AI Systems: Beyond Simple Chat Prompts",
+    "autor": "@JesusChock",
+    "fecha": "14 Apr 2026",
+    "contenido": "The AI paradigm is rapidly moving from static Q&A chat assistants to autonomous 'Agentic' systems. These agents can plan complex multi-step workflows, call web APIs, run terminal commands, self-correct compiler errors, and collaborate with other specialized subagents in the background. Designing reliable agent-to-agent communication and workspace sandboxes is the next big frontier in software engineering.",
+    "etiquetas": ["AI", "Agents", "Future Tech", "Automation"],
+    "referencia": "https://deepmind.google/"
+  },
+  {
+    "id": 5,
+    "titulo": "Understanding React Server Components (RSC) and Modern SSR",
+    "autor": "@JesusChock",
+    "fecha": "05 Apr 2026",
+    "contenido": "React Server Components are redefining how we think about modern web architectures. By executing component logic directly on the server, RSCs allow developers to fetch database records securely without client APIs, dramatically reduce client-side JavaScript bundle sizes, and achieve near-instantaneous first-contentful paints. Balancing Client and Server components is now key to premium web design.",
+    "etiquetas": ["React", "NextJS", "Web Architecture", "Frontend"],
+    "referencia": "https://react.dev/"
+  },
+  {
+    "id": 6,
+    "titulo": "Why TypeScript is Now Non-Negotiable for Enterprise Apps",
+    "autor": "@JesusChock",
+    "fecha": "22 Mar 2026",
+    "contenido": "While vanilla JavaScript is excellent for quick prototyping, TypeScript is essential for any production codebase with multiple contributors. Static typing acts as a living, compile-time contract, catching bugs before they hit production, providing powerful IDE autocomplete features, and making complex refactoring tasks safe and stress-free. It simply makes code self-documenting and maintainable.",
+    "etiquetas": ["JavaScript", "TypeScript", "Good Practices", "Programming"],
+    "referencia": "https://www.typescriptlang.org/"
+  },
+  {
+    "id": 7,
+    "titulo": "Vector Databases and RAG: Feeding Custom Data to LLMs",
+    "autor": "@JesusChock",
+    "fecha": "10 Mar 2026",
+    "contenido": "To build context-aware AI applications, Retrieval-Augmented Generation (RAG) is essential. RAG relies on vector databases (like Pinecone, Chroma, or pgvector) to store text embeddings. When a user asks a question, the application searches the database for semantically similar paragraphs and injects them directly into the LLM context window. This creates highly accurate, domain-specific chat bots.",
+    "etiquetas": ["AI", "Vector DB", "RAG", "Data Science"],
+    "referencia": "https://www.pinecone.io/"
+  },
+  {
+    "id": 8,
+    "titulo": "Why Vite Has Officially Won the Modern Build Tool Wars",
+    "autor": "@JesusChock",
+    "fecha": "25 Feb 2026",
+    "contenido": "Webpack served the global web community well for a decade, but Vite has officially taken the throne for modern development. By leveraging native ES Modules (ESM) during development and pre-bundling dependencies with esbuild, Vite starts instantly and performs Hot Module Replacement (HMR) at lightning speeds, regardless of how large and complex the codebase grows over time.",
+    "etiquetas": ["Vite", "Webpack", "Build Tools", "Frontend"],
+    "referencia": "https://vitejs.dev/"
+  },
+  {
+    "id": 9,
+    "titulo": "REST, GraphQL, or gRPC? Choosing the Right API Style",
+    "autor": "@JesusChock",
+    "fecha": "12 Feb 2026",
+    "contenido": "Selecting the right communication protocol defines your system's overall performance. REST remains the standard for public APIs due to its simplicity. GraphQL shines in complex client applications where frontends need to query precise nested graphs without over-fetching. gRPC is the gold standard for high-performance, low-latency microservices communication using Protocol Buffers.",
+    "etiquetas": ["Backend", "APIs", "REST", "GraphQL", "gRPC"],
+    "referencia": "https://graphql.org/"
+  },
+  {
+    "id": 10,
+    "titulo": "Perfecting Your Git Workflow: Writing Clean Commit Histories",
+    "autor": "@JesusChock",
+    "fecha": "30 Jan 2026",
+    "contenido": "A messy Git history is technical debt that slows down debugging and team collaboration. Adopting a structured workflow—like Conventional Commits (feat:, fix:, docs:)—combined with rebasing instead of messy merge commits, keeps your repository clean. Squash-merging pull requests ensures the main branch remains a pristine timeline of readable feature additions.",
+    "etiquetas": ["Git", "DevOps", "Collaboration", "Good Practices"],
+    "referencia": "https://git-scm.com/"
+  }
 ]

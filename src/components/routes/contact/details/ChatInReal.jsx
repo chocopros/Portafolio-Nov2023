@@ -5,8 +5,15 @@ import LogoCallCard from '../../../utils/LogoCallCard'
 const ChatInReal = () => {
   return (
     <ChatReal>
-
-        <h2>Write to me in real time!!!</h2>
+        <div className="chat__header">
+            <div className="chat__icon">
+                <i className="fa-solid fa-comments"></i>
+            </div>
+            <div className="chat__text">
+                <h2>Direct Channels</h2>
+                <p>Choose your preferred messaging platform below to start a live conversation with me. I usually reply within a few hours!</p>
+            </div>
+        </div>
 
         <ContainerLogo>
 
@@ -39,23 +46,91 @@ const ChatInReal = () => {
 
 export default ChatInReal
 
-const ChatReal = styled.section`
-    
+const ChatReal = styled.article`
+  background: rgba(30, 30, 35, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: border-color 0.3s ease;
 
-`
-const ContainerLogo = styled.ul`
+  &:hover {
+    border-color: rgba(255, 51, 187, 0.2);
+  }
 
+  .chat__header {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:  50px 150px;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding-bottom: 20px;
 
-    margin: 30px 0;
-
-    a {
-        text-decoration: none;
-        color: #fff;
+    .chat__icon {
+      font-size: 26px;
+      color: rgb(255, 51, 187);
+      background: rgba(255, 51, 187, 0.08);
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
+    .chat__text {
+      text-align: left;
+      
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 0;
+      }
+
+      p {
+        font-size: 13px;
+        color: #a0a0a5;
+        margin: 4px 0 0 0;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  @media(min-width: 768px) {
+    padding: 30px;
+    
+    .chat__header {
+      .chat__text {
+        h2 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
 `
 
+const ContainerLogo = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 24px 0 0 0;
+  padding: 0;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  @media(min-width: 768px) {
+    gap: 30px;
+    margin: 40px 0 0 0;
+  }
+`

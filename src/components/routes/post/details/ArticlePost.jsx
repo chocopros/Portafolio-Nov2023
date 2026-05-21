@@ -1,12 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const ArticlePost = ({ title, author, content, fecha, reference, tags }) => {
     return (
-
         <NewPost>
-
             <div className='header__cabezera'>
                 <div className='image__profile'>
                     <img src="/images/profile2.jpg" alt={author} />
@@ -14,14 +11,12 @@ const ArticlePost = ({ title, author, content, fecha, reference, tags }) => {
                 <div className='autor__content'>
                     <div className='title__author'>
                         <h3>{author}</h3>
-                        <span>{fecha}</span>
+                        <span className='date'>{fecha}</span>
                     </div>
                     <ul className='list__tags'>
-                        {
-                            tags.map(tag => (
-                                <li key={tag}>{tag}</li>
-                            ))
-                        }
+                        {tags && tags.map(tag => (
+                            <li key={tag} className='tag__chip'>{tag}</li>
+                        ))}
                     </ul>
                 </div>
             </div>
@@ -30,10 +25,12 @@ const ArticlePost = ({ title, author, content, fecha, reference, tags }) => {
                 <h2>{title}</h2>
                 <p>{content}</p>
                 {reference && (
-                    <a href={reference} target="_blank" rel="noopener noreferrer">Go to source...</a>
+                    <a href={reference} target="_blank" rel="noopener noreferrer" className='read__more'>
+                        <span>Read Source</span>
+                        <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 )}
             </div>
-
         </NewPost>
     )
 }
@@ -41,93 +38,174 @@ const ArticlePost = ({ title, author, content, fecha, reference, tags }) => {
 export default ArticlePost
 
 const NewPost = styled.article`
+  display: flex;
+  flex-direction: column;
+  background: rgba(30, 30, 35, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 24px;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 51, 187, 0.35);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 51, 187, 0.06);
+  }
+
+  .header__cabezera {
     display: flex;
-    flex-direction: column;
-    max-height: 410px;
-    width: 630px;
-    border: solid #e3e3e351 1px;
-    border-radius: 10px;
-    padding: 33px;
-    gap: 20px 0;
-    background-color: #00000035;
-    transition: all 300ms ease;
+    align-items: center;
+    gap: 14px;
 
-    &:hover {
-        transform: scale(1.03);
-        
+    .image__profile {
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+
+      img {
+        border-radius: 50%;
+        border: 2px solid rgba(255, 51, 187, 0.2);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
-    
 
-    .header__cabezera {
+    .autor__content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow: hidden;
+
+      .title__author {
         display: flex;
         align-items: center;
-        gap: 0 15px;
+        flex-wrap: wrap;
+        gap: 8px;
 
-        .image__profile{
-            width: 100px;
-            height: 100px;
-            
-            img {
-                border-radius: 50%;
-                border: solid #ffffff18 0.5px;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-
-                
-            }
+        h3 {
+          font-size: 15px;
+          font-weight: 600;
+          color: #ffffff;
+          margin: 0;
         }
 
-        .title__author{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0 20px;
-            align-items: center;
-
-            h3{
-                font-size: 33px;
-                
-            }
-
-            span{
-                color: #ffffff56;
-            }
+        .date {
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.4);
         }
+      }
 
-        .list__tags{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0 20px;
-            font-size: 12px;
-            color: #ffffff90;
-
-            list-style: none;
-        }
-    }
-    
-    .body__post{
+      .list__tags {
         display: flex;
-        flex-direction: column;
-        gap: 20px 0;
-        margin-bottom: 20px;
+        flex-wrap: wrap;
+        gap: 4px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
-        h2{
-            font-size: 20px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-height: 55px;
-            
+        .tag__chip {
+          background: rgba(255, 255, 255, 0.05);
+          color: rgba(255, 255, 255, 0.7);
+          padding: 2px 8px;
+          border-radius: 100px;
+          font-size: 10px;
+          font-weight: 500;
+          border: 1px solid rgba(255, 255, 255, 0.03);
+          transition: all 0.3s ease;
         }
+      }
+    }
+  }
 
-        p{
-            font-size: 14px;
-            overflow: auto;
-            text-overflow: ellipsis;
-            height: 115px;
-        }
+  .body__post {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
 
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #ffffff;
+      margin: 0;
+      transition: color 0.3s ease;
     }
 
+    p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #b0b0b5;
+      margin: 0;
+      flex-grow: 1;
+    }
 
+    .read__more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: rgb(255, 51, 187);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-top: 8px;
+      transition: all 0.3s ease;
+      align-self: flex-start;
+
+      i {
+        font-size: 11px;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        color: rgb(255, 110, 210);
+
+        i {
+          transform: translate(2px, -2px);
+        }
+      }
+    }
+  }
+
+  &:hover .body__post h2 {
+    color: rgb(255, 51, 187);
+  }
+
+  &:hover .autor__content .list__tags .tag__chip {
+    background: rgba(255, 51, 187, 0.04);
+    border-color: rgba(255, 51, 187, 0.15);
+    color: rgb(255, 110, 210);
+  }
+
+  @media (min-width: 768px) {
+    padding: 28px;
     
+    .header__cabezera {
+      .image__profile {
+        width: 50px;
+        height: 50px;
+      }
+      .autor__content {
+        .title__author {
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    
+    .body__post {
+      h2 {
+        font-size: 21px;
+      }
+    }
+  }
 `

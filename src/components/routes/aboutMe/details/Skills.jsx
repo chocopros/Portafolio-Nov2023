@@ -292,14 +292,15 @@ const CardSkill = styled.article`
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      gap: 30px 10px;
-      justify-content: space-around;
+      gap: 12px;
+      justify-content: center;
       align-items: center;
       margin-top: 20px;
-      padding: 0 10px;
+      padding: 0;
 
       @media(min-width: 768px) {
-        padding: 0 35px;
+        gap: 20px;
+        padding: 0 15px;
       }
     }
   }

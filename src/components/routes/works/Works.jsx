@@ -25,11 +25,9 @@ const MainContainer = styled.main`
 `;
 
 const SectionHero = styled.section`
-  
   min-height: 100vh;
-  
   color: white;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
-
+  padding-bottom: 80px;
 `
